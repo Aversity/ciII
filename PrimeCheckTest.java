@@ -22,7 +22,7 @@ public class PrimeCheckTest {
   // --------------------------------------------------------------- //
   @Test
   public void testPrimes() {
-    Int[] testListe = new Int[3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67];
+    int[] testListe = new int[]{3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67};
     for (int j = 0; j < testListe.length; j++) {
       assertEquals("Test" + String(j+3), true, PrimeCheck.isPrime(testListe[j]));
     }
@@ -31,7 +31,7 @@ public class PrimeCheckTest {
   // --------------------------------------------------------------- //
   @Test
   public void testNonPrimes() {
-    Int[] testListe = new Int[4, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20, 21, 22, 24, 25, 26, 27, 28];
+    int[] testListe = new int[]{4, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20, 21, 22, 24, 25, 26, 27, 28};
     for (int k = 0; k < testListe.length; k++ ) {
       assertEquals("Test" + String(k+20), false, PrimeCheck.isPrime(testListe[k]));
     }
